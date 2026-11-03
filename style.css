@@ -1,0 +1,52 @@
+* { box-sizing: border-box; }
+body { margin: 0; background: #fff; color: #292929; font: 18px/1.6 Georgia, "Times New Roman", serif; }
+main { max-width: 720px; margin: 40px auto; }
+nav, footer, .sources { font: 13px/1.5 Arial, sans-serif; color: #5b6266; }
+nav { margin-bottom: 24px; }
+h1 { font-size: 36px; line-height: 1.15; margin: 0 0 16px; }
+h2 { font-size: 23px; line-height: 1.3; margin: 30px 0 10px; }
+p { margin: 0 0 16px; }
+a { color: #374f5b; text-underline-offset: 3px; overflow-wrap: anywhere; }
+a:focus-visible { outline: 2px solid #374f5b; outline-offset: 3px; }
+a.source { color: #596167; font-size: 0.85em; }
+.deadline { color: #7d2222; font: bold 17px/1.5 Arial, sans-serif; margin-bottom: 22px; }
+.deadline a { color: inherit; }
+.one-minute { background: #f2f2f2; padding: 18px 22px; margin-bottom: 22px; }
+.one-minute h2 { font-size: 21px; margin: 0 0 10px; }
+ul { padding-left: 23px; margin: 8px 0 18px; }
+li { margin: 7px 0; }
+.one-minute ul { margin: 0; }
+.one-minute li:last-child { margin-bottom: 0; }
+footer { border-top: 1px solid #d8d8d8; margin-top: 40px; padding-top: 16px; }
+.table-scroll { overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; margin: 10px 0 24px; font-size: 16px; line-height: 1.5; }
+th, td { text-align: left; vertical-align: top; padding: 12px 10px; border-bottom: 1px solid #d8d8d8; }
+th { font: bold 14px/1.5 Arial, sans-serif; }
+th:first-child, td:first-child { padding-left: 0; }
+th:last-child, td:last-child { padding-right: 0; }
+.comparison table { min-width: 1000px; font-size: 15px; }
+@media (max-width: 760px) {
+  main { margin: 24px 18px; }
+  h1 { font-size: 30px; }
+  .one-minute { padding: 16px; }
+  table { font-size: 14px; }
+  th, td { padding: 10px 6px; }
+}
+@page { size: letter; margin: 0.5in; }
+@media print {
+  body { font-size: 10pt; line-height: 1.35; color: #111; }
+  main { max-width: none; margin: 0; }
+  nav { display: none; }
+  h1 { font-size: 20pt; }
+  h2 { font-size: 12pt; margin: 12pt 0 4pt; break-after: avoid; }
+  .deadline { font-size: 10pt; }
+  .one-minute { padding: 9pt 12pt; break-inside: avoid; }
+  .one-minute h2 { font-size: 12pt; }
+  p, ul { margin-bottom: 6pt; }
+  footer, .sources { font-size: 8pt; }
+  footer { margin-top: 16pt; }
+  .table-scroll { overflow: visible; }
+  .comparison table { min-width: 0; font-size: 7pt; }
+  tr { break-inside: avoid; }
+  a:focus-visible { outline: none; }
+}
